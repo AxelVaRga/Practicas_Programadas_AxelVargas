@@ -1,0 +1,454 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 feb 2023, 09:55:27
+    Author     : 2003a
+*/
+/*codigo global*/
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #000;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*Distancia por bloque*/
+section {
+    padding: 3.9rem 0;
+    overflow: hidden;
+}
+
+
+
+
+/*links del menu*/
+a {
+    text-decoration: none;
+
+    
+}
+
+/*parrafos*/
+p {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 30px 0;
+
+}
+/*tamaño general de los bloques de la pagina en los que se divide*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 122.3rem;
+    padding: 0 2.0rem;
+}
+.header {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
+}
+/**foto del principio del encabezado**/
+.encabezado {
+    width: 100%;
+    height: 60vh;
+    background-image: url("https://media.giphy.com/media/5z0Clc1s7uQfxuC1eG/giphy.gif"); 
+    background-position: center 25%; 
+    background-size:cover; 
+    display: flex;
+    align-items: center;
+    text-align: center; /*alinear textos de adentro de la imagen*/
+}
+
+/**distancia global por cada section de contenido**/
+.global {
+    text-align: center;
+    margin-top: 2.5rem;
+   
+}
+.firts .global {
+    margin-top: 2.5em;
+}
+
+/*tiulos en rosado estilo primera letra mas grande*/
+.fil{
+     text-transform: uppercase;
+     font-size: 4rem;
+}
+/*titulos en rosado*/
+.h2-sub {
+    font-size: 3.5rem;
+    left:50%;
+    font-family: 'Poppins', sans-serif;
+    color:lightpink;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+/*diseño de menu*/
+.nav{
+   
+   display:flex;
+   justify-content:space-between;
+   max-width: 992px;
+   margin: 0 auto;
+  
+}
+.logo{
+    font-size: 30px;
+    line-height: 80px;
+    padding:0 20px;
+    
+    
+}
+.list-link{
+    font-weight: bold;/*aumentar el grosor de las letra*/
+    text-decoration: none;
+    color:lightpink;
+    
+}
+/*espaciado entre las opciones del menu*/
+.menu-item{
+    margin: 0 20px;
+}
+/*opciones del menu*/
+.list{
+   
+    font-size: 15px;
+    display:flex;
+    line-height:80px;
+    list-style: none;
+    margin: 0 80px;
+    
+}
+/*diseño de las opciones del menu*/
+
+.list-link-m{
+    text-decoration: none;
+    color: white;
+    padding: 5px 12px; /*tamaño del cuadro de la animacion*/
+    border-radius: 8px;
+}
+
+/*animacion*/
+.list-link-m:hover{
+    background-color: azure;/*fondo del cuadro de animacion*/
+    color:black; /*color de la letra por la animacion*/
+    font-size: 17px;
+    transition: 0.3s;
+
+    
+}
+/*imagen bloque segundo bloque*/
+.second{
+    background-image: url('https://th.bing.com/th/id/R.82bbedbcaa151801e6defd48cdbb096f?rik=ghDjFm0bkiBkoA&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+.second::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: -1;
+}
+/*diseño de imagen de anillos*/
+.fort{
+    background-image: url('https://th.bing.com/th/id/R.39bb18b5fa0c6619666ca33f6826a3a0?rik=itmWi2aYFvL3ew&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+.fort::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: -1;
+}
+   
+
+.yt {
+
+    min-height: 65vh;
+    display:flex;
+    align-items: center;
+}
+
+
+/*pie de la pagina*/
+
+/*diseño*/
+.footer-cont{
+    
+    color:white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align:center;
+}
+/*Estructura*/
+.pie{
+ 
+    background-color:black; 
+    width: 100%;
+    height:15px;
+    padding:30px;
+    
+}
+/*parrafos*/
+.res-des p {
+    text-align: center;
+    margin-bottom: 5rem ;
+
+}
+/*botones*/
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+/*diseño y animacion*/
+.cta-btn {
+    font-size: 1.1rem;
+    background-color:#000;
+    padding: 1.0rem 2rem;
+    color: #fff;
+    border-radius: .5rem;
+   
+}
+.cta-btn:hover,
+.cta-btn:focus {
+    color: #fff;
+    background-color:lightpink;
+}
+
+/*Espacio de los botones*/
+.res-info {
+    text-align: center;
+
+}
+/*boton de los bloques */
+.res-des {
+    margin-bottom: 5rem ;  
+    padding: 52px;
+    text-align: center;
+}
+/**textos**/
+.res-des p {
+    text-align: center;  
+    margin-bottom: 5rem ;
+
+}
+/*imagenes*/
+
+.image-group {
+    
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem 23rem;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.disco .res-des {
+    padding-top: 3rem;
+    margin-bottom: 0;
+}
+/*texto del encabezado*/
+.Text-encabe h5 {
+    
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    padding: 10px;
+}
+
+
+.dis-sto .global {
+    margin-top: 2.5em;
+}
+
+
+/*subtitulos*/
+.head{
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+.head-hea-dark {
+    color: black;
+    letter-spacing: .6rem;
+    margin-right: -.7rem;
+    font-size: 35px;
+   
+}
+.infor{
+    padding:20px 0;
+    font-size: 2.0rem;
+    text-align: left;
+}
+/*diseño de titulo de historia en informacion*/
+.h2-subti{
+    font-size: 3.5rem;
+    left:50%;
+    font-family: 'Poppins', sans-serif;
+    color:lightpink;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    text-align: center;
+    padding:60px 0;
+    
+}
+/*tiulos en rosado estilo primera letra mas grande en informacion.html*/
+.filo{
+     text-transform: uppercase;
+     font-size: 4rem;
+}
+.htt{
+    color: black;
+    letter-spacing: .6rem;
+    margin-right: -.7rem;
+    font-size: 25px;   
+    text-align:left;
+    padding: 25px 0;
+}
+/*Diseño de registro*/
+.login{
+    color: black;
+    letter-spacing: .6rem;
+    margin-right: -.7rem;
+    font-size: 25px;   
+    text-align:left;
+    padding: 25px 0;
+}
+.bit{
+    text-transform: uppercase;
+     font-size: 4rem;
+}
+.h2-s{
+     font-size: 3.5rem;
+    left:50%;
+    font-family: 'Poppins', sans-serif;
+    color:lightpink;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    text-align: left;
+    padding:10px 0;
+}
+.registro{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 rgba(0,0,0,0.19); /*borde y reflejo en forma de caja*/
+    border:none;
+    color:black;
+    padding: 25px 0;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:25px;/*espaciado de los formularios*/
+    font-size:15px;
+    align-items: center;
+}
+.cuadro{
+    border-style: none;
+    
+}
+.boton{
+    width: 10%;
+    text-align: center;
+    
+}
+.division{
+    width: 80%;
+}
+.division-2{
+    width: 70%;
+    
+}
+.linea{
+    padding:20px 0;
+}
+/*html novedaades*/
+
+/*fondo*/
+.nov{
+    background-color: rgba(0,0,0,0.4);
+}
+/*titulo*/
+.arrivals{
+    font-size: 3.5rem;
+    left:50%;
+    font-family: 'Poppins', sans-serif;
+    color:lightpink;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    text-align: left;
+    padding:60px 0;
+}
+
+
+.drop{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.tit{
+    color: white;
+    letter-spacing: .6rem;
+    margin-right: -.7rem;
+    font-size: 25px;   
+    text-align:left;
+    padding: 10px 0;
+}
+
+.carrusel{
+    display:flex;
+    width: 1200px;
+    height: 650px;
+
+     
+}
+.carrusel img{
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 rgba(0,0,0,0.19); /*borde y reflejo en forma de caja*/
+    width: 0;
+    flex-grow:1;            /*que cubra todo el espacio que pueda*/
+    object-fit: cover;          /*fotos abarquen todo el espacio*/
+    opacity: .8;     /*opacidad*/
+    transition: 2s ease;    /*transicion de animacion*/
+    
+}
+.carrusel img:hover{
+   width: 300px;
+   opacity: 1;
+   filter:contrast(120%);/*contraste de la imagen*/
+}
